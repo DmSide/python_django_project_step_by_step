@@ -9,13 +9,13 @@ from django.core.management.base import BaseCommand
 from django.utils import timezone
 from django.core.exceptions import MultipleObjectsReturned, ObjectDoesNotExist
 
-from web_service.settings import BASE_DIR, SERVER_NAME
+from test_django.settings import BASE_DIR, SERVER_NAME
 
 from background_task.tasks import tasks, autodiscover
 from background_task.utils import SignalManager
 from compat import close_connection
 
-from nlp.models import ServerStatus
+from polls.models import ServerStatus
 from background_task.models import Task
 import os
 
