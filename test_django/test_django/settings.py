@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 'run_tasks',
+    # 'nlp_tasks'
+    'polls',
     'background_task'
 ]
 
