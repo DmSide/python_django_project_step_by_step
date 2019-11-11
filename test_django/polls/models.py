@@ -7,6 +7,24 @@ class ServerStatusManager(models.Manager):
     pass
 
 
+class RunserverTasksManager(models.Manager):
+    pass
+
+
+class RunserverTasks(models.Model):
+    pid = models.BigIntegerField()
+    name = models.CharField(max_length=100, default='')
+    host = models.CharField(max_length=100, default='')
+    start_time = models.DateTimeField()
+    end_time = models.DateTimeField(null=True)
+    deleted = models.BooleanField(default=False)
+
+    def __str__(self):  # __unicode__ on Python 2
+        return self.name
+
+    objects = RunserverTasksManager()
+
+
 class ServerStatus(models.Model):
     """
     server_name         :: name of server from config

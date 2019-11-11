@@ -1,7 +1,7 @@
 import django
 import os
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "web_service.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "test_django.settings")
 django.setup()
 
 import logging
