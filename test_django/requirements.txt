@@ -1,0 +1,9 @@
+Django==2.2.7
+django-background-tasks==1.2.0
+django-compat==1.0.15
+gunicorn==19.9.0
+mysql==0.0.2
+mysqlclient==1.4.4
+pytz==2019.3
+six==1.13.0
+sqlparse==0.3.0
