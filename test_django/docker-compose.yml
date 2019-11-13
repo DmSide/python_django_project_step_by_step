@@ -1,0 +1,6 @@
+version: '2'
+services:
+  test_django:
+    build:
+      context: ./test_django
+      dockerfile: ./test_django/Dockerfile
